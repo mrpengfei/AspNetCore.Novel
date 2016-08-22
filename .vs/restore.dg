@@ -1,2 +1,7 @@
-#:D:\360CloudUI\Cache\555423530\项目\Novel\src\Novel.Web\Novel.Web.xproj
-D:\360CloudUI\Cache\555423530\项目\Novel\src\Novel.Web\Novel.Web.xproj|D:\360CloudUI\Cache\555423530\项目\Novel\src\Novel.Service\Novel.Service.xproj
+#:D:\ceshi\AspNetCore.Novel\src\Novel.Service\Novel.Service.xproj
+D:\ceshi\AspNetCore.Novel\src\Novel.Service\Novel.Service.xproj|D:\ceshi\AspNetCore.Novel\src\Novel.Utility\Novel.Utility.xproj
+#:D:\ceshi\AspNetCore.Novel\src\Novel.Web\Novel.Web.xproj
+D:\ceshi\AspNetCore.Novel\src\Novel.Web\Novel.Web.xproj|D:\ceshi\AspNetCore.Novel\src\Novel.Service\Novel.Service.xproj
+D:\ceshi\AspNetCore.Novel\src\Novel.Web\Novel.Web.xproj|D:\ceshi\AspNetCore.Novel\src\Novel.Utility\Novel.Utility.xproj
+D:\ceshi\AspNetCore.Novel\src\Novel.Service\Novel.Service.xproj|D:\ceshi\AspNetCore.Novel\src\Novel.Utility\Novel.Utility.xproj
+#:D:\ceshi\AspNetCore.Novel\src\Novel.Utility\Novel.Utility.xproj
