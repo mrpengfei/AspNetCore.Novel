@@ -1,63 +1,135 @@
 ﻿<!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Blank Page - Ace Admin</title>
 
-    <title>@ViewBag.Title</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="/areas/admin/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/areas/admin/assets/font-awesome/4.2.0/css/font-awesome.min.css" />
 
-    <!-- Custom styles for this template -->
-    <link href="/css/site.css" rel="stylesheet">
+    <!-- page specific plugin styles -->
+    <!-- text fonts -->
+    <link rel="stylesheet" href="/areas/admin/assets/fonts/fonts.googleapis.com.css" />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <!-- ace styles -->
+    <link rel="stylesheet" href="/areas/admin/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
 </head>
+
 <body class="no-skin">
-    <div id="nav" class="nav navbar-default">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand">Novel</a>
-        </div>
-    </div>
-    <div id="container" class="container-fluid">
-        <div class="row">
-            <div id="sidebar" class="sidebar col-sm-3 col-md-2">
-                <ul class="nav">
-                    <li>
-                        <a href="#">小说管理</a>
-                        <ul>
-                            <li>
-                                <a href="#">小说列表</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div></div>
-            </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
-                <div id="main-content" class="row">
-                    @RenderBody()
-                </div>
-                <div id="footer" class="row footer">
-                    <div class="footer-content">
-                        <span>小说管理</span> &copy;2016-2021 
-                    </div>
-                </div>
+    <div id="navbar" class="navbar navbar-default">
+       
+        <div class="navbar-container" id="navbar-container">
+            <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                <span class="sr-only">Toggle sidebar</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-header pull-left">
+                <a href="index.html" class="navbar-brand">
+                    <small>
+                        <i class="fa fa-leaf"></i>
+                        Ace Admin
+                    </small>
+                </a>
             </div>
             
-        </div>
+        </div><!-- /.navbar-container -->
     </div>
+
+    <div class="main-container" id="main-container">
+       
+        <div id="sidebar" class="sidebar responsive">
+           
+            <ul class="nav nav-list">
+                <li class="">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-desktop"></i>
+                        <span class="menu-text">
+                           小说管理
+                        </span>
+
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    <b class="arrow"></b>
+                                     
+                    <ul class="submenu">
+                        <li class="">
+                            <a href="#" class="dropdown-toggle">
+                                <i class="menu-icon fa fa-caret-right"></i>
+
+                                <span>小说列表</span>
+                            </a>
+
+                            <b class="arrow"></b>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul><!-- /.nav-list -->
+
+            <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+                <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="main-content-inner">
+               @RenderBody()
+            </div>
+        </div><!-- /.main-content -->
+
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-content">
+                    <span class="bigger-120">
+                        <span class="blue bolder">Ace</span>
+                        Application &copy; 2013-2014
+                    </span>
+
+                    &nbsp; &nbsp;
+                    <span class="action-buttons">
+                        <a href="#">
+                            <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+            <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+        </a>
+    </div><!-- /.main-container -->
+    <!-- basic scripts -->
+        <script src="/areas/admin/assets/js/jquery.1.11.1.min.js"></script>
+
+        <script src="/areas/admin/assets/js/bootstrap.min.js"></script>
+
+    <!-- page specific plugin scripts -->
+    <!-- ace scripts -->
+    <script src="/areas/admin/assets/js/ace-elements.min.js"></script>
+    <script src="/areas/admin/assets/js/ace.min.js"></script>
+
+    <!-- inline scripts related to this page -->
 </body>
 </html>

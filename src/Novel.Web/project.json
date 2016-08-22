@@ -16,7 +16,8 @@
     "Dapper": "1.50.2",
     "SapientGuardian.MySql.Data": "6.9.813",
     "Novel.Service": "1.0.0-*",
-    "Novel.Utility": "1.0.0-*"
+    "Novel.Utility": "1.0.0-*",
+    "Microsoft.AspNetCore.Razor.Tools": "1.0.0-preview2-final"
   },
 
   "tools": {

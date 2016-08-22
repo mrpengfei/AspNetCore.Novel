@@ -7,6 +7,13 @@
     list-style:none;
 }
 
+.navbar-default {
+    background-color: #438EB9;
+}
+.navbar-default .navbar-brand{
+    color: #fff;
+}
+
 .no-skin .sidebar {
     background-color:#F2F2F2;
     border-right:solid 1px #ccc ;
@@ -18,4 +25,22 @@
     bottom:0px;
     overflow-x:hidden;
     overflow-y:auto;
+    padding: 0;
+}
+
+.submenu {
+    
+}
+
+.nav-list {
+    width: 100%;
+}
+
+.nav-list li{
+    border: solid #E5E5E5;
+    border-width: 1px 0;
+}
+
+.nav-list>li>a{
+    background-color: #F8F8F8;
 }
