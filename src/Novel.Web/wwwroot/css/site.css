@@ -1,0 +1,21 @@
+﻿body {
+    margin:0;
+    padding:0;
+    background-color:#f8f8f8;
+    color:#000000;
+    font-size:13px;
+    list-style:none;
+}
+
+.no-skin .sidebar {
+    background-color:#F2F2F2;
+    border-right:solid 1px #ccc ;
+}
+
+.sidebar {
+    position:fixed;
+    top:50px;
+    bottom:0px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}

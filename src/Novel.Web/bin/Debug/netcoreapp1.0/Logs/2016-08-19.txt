@@ -1,0 +1,4 @@
+2016-08-19 15:04:55.1699|INFO|Novel.Web|日志测试：/Home/Index
+2016-08-19 15:05:45.5324|INFO|Novel.Web|日志测试：/Home/Index
+2016-08-19 15:05:52.6525|INFO|Novel.Web|日志测试：/Home/Index
+2016-08-19 15:07:18.5079|INFO|Novel.Web|日志测试：/Home/Index
